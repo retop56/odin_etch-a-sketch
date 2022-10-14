@@ -4,6 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   background-color: black;
+  margin: 0;
 }
 
 .square-container {
@@ -12,11 +13,15 @@ body {
   flex-wrap: wrap;
 }
 
-.square-container > * {
+.square {
   width: 14px;
   height: 14px;
   margin: 0;
   padding: 0;
   border: 1px solid white;
   flex-shrink: 0;
+}
+
+.square:hover {
+  background-color: red;
 }
