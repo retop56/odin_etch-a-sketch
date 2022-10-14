@@ -20,7 +20,6 @@ body {
 
 .square-container {
   display: flex;
-  /* max-width: 256px; */
   width: 600px;
   height: 600px;
   flex-wrap: wrap;
@@ -30,8 +29,6 @@ body {
 }
 
 .square {
-  /* width: 16px;
-  height: 16px; */
   margin: 0;
   padding: 0;
   flex-shrink: 0;
