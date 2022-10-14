@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.square-container {
+  display: flex;
+  width: 256px;
+  flex-wrap: wrap;
+}
+
+.square-container > * {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
+  flex-shrink: 0;
+}
