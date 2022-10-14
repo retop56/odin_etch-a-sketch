@@ -20,7 +20,9 @@ body {
 
 .square-container {
   display: flex;
-  max-width: 256px;
+  /* max-width: 256px; */
+  width: 600px;
+  height: 600px;
   flex-wrap: wrap;
   box-sizing: border-box;
   margin: 0;
@@ -28,14 +30,27 @@ body {
 }
 
 .square {
-  width: 16px;
-  height: 16px;
+  /* width: 16px;
+  height: 16px; */
   margin: 0;
   padding: 0;
-  /* border: 1px solid white; */
   flex-shrink: 0;
 }
 
-/* .square:hover {
-  background-color: red;
-} */
+button {
+  width: 400px;
+  height: 100px;
+  align-self: center;
+  margin-top: 25px;
+  font-size: 2rem;
+  border: none;
+  color: white;
+  background-color: #473970;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: #725fa7;
+}
