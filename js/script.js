@@ -1,6 +1,6 @@
 const titleHeading = document.createElement("h1");
 titleHeading.classList.add("title");
-titleHeading.textContent = "Etch-A-Sketch";
+titleHeading.textContent = "16x16 Etch-A-Sketch";
 document.body.append(titleHeading);
 
 const wrapper = document.createElement("div");
@@ -25,7 +25,7 @@ function askNumOfSquares() {
     if (newNumOfSquares === null) {
       return;
     }
-    if (typeof newNumOfSquares !== "number") {
+    if (isNaN(newNumOfSquares)) {
       alert("Please enter a number!");
     } else if (newNumOfSquares > 100 || newNumOfSquares < 1) {
       alert("Must be number between 1 and 100!");
@@ -33,9 +33,14 @@ function askNumOfSquares() {
       clearOutSquares();
       generateSquares(newNumOfSquares);
       addHoverEffect();
+      editTitle(newNumOfSquares);
       break;
     }
   }
+}
+
+function editTitle(num) {
+  titleHeading.textContent = `${num}x${num} Etch-A-Sketch`;
 }
 
 function clearOutSquares() {
